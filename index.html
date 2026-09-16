@@ -13,11 +13,13 @@
     }
     h1 {
       color: #2e5c8a;
+      font-size: 3em;
     }
     h2 {
       color: #3d4852;
       border-bottom: 2px solid #c7ccd1;
       padding-bottom: 4px;
+      margin-top: 50px;
     }
     a {
       color: #2e5c8a;
@@ -26,13 +28,67 @@
     a:hover {
       text-decoration: underline;
     }
+    .subtitle {
+      color: #5c6670;
+      font-size: 1.1em;
+      margin-top: -8px;
+    }
+    .team-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+    .team-list li {
+      background-color: #e4e9ee;
+      color: #2e5c8a;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .button-row a {
+      background-color: #2e5c8a;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .button-row a:hover {
+      background-color: #24476b;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <h1>Arch Nemesis — CISC 322/362 Project</h1>
+  <h1>Arch Nemesis</h1>
+  <p class="subtitle">CISC 322/326 Software Architecture</p>
+
+  <h2>The Team</h2>
+  <ul class="team-list">
+    <li>Paige</li>
+    <li>Sandy</li>
+    <li>Kezia</li>
+    <li>Sienna</li>
+    <li>Ali</li>
+  </ul>
+
   <h2>Documentation</h2>
-  <ul><li><a href="#">link to relevant docs</a></li></ul>
-  <h2>Reports & Presentations</h2>
-  <ul><li><a href="#">link once submitted</a></li></ul>
+  <div class="button-row">
+    <a href="#">Assignment 1</a>
+    <a href="#">Assignment 2</a>
+    <a href="#">Assignment 3</a>
+  </div>
+
+  <h2>Presentation</h2>
+  <div class="button-row">
+    <a href="#">Slides</a>
+    <a href="#">Script</a>
+  </div>
 </body>
 </html>
